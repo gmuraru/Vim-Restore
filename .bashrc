@@ -117,8 +117,19 @@ fi
 # Defined by me
 PYTHONPATH="/home/george/bad_jokes_detector/python_mysql"
 PYTHONPATH=$PYTHONPATH:"/home/george/Python Modules"
+
+WORKON_HOME=~/Envs
+
 export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
 export PYTHONPATH
 alias val='valgrind --leak-check=full --show-leak-kinds=all'
 alias go='gnome-open'
 alias p='ping 8.8.8.8'
+alias m='make'
+alias rl_sqlplus='rlwrap sqlplus'
+alias rl_rman='rlwrap rman'
+alias rl_asmcmd='rlwrap asmcmd'
+
+export ORACLE_SID=ragnarokd
+export ORACLE_HOME=/home/george/app/george/product/12.1.0/dbhome_2
+export PATH=$PATH:$ORACLE_HOME/bin
